@@ -11,7 +11,7 @@
 }
 
 .grid.wide{
-  max-width: 1070px;
+  max-width: 1200px;
   margin: 0 auto;
 } 
 
@@ -124,6 +124,9 @@
 .c-o-11{
   margin-left: 91.66667%;
 }
+@media (min-width: 576px) { 
+  
+ }
 
 /*  Tablet - PC low resolution */
 @media screen and (min-width:740px) and (max-width:1023px){
@@ -306,8 +309,8 @@
     max-width: 58.33333%;
   }
   .l-8{
-    flex: 0 0 67.66667%;
-    max-width: 67.66667%;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
   }
   .l-9{
     flex: 0 0 75%;

@@ -13,20 +13,41 @@
             <div class=" header__logo">
               <img src="images/logo.png" alt="">
             </div>
-            <nav class="header__navigation">
+             <nav class="header__navigation">
              <ul>
-              <li>Home</li>
-              <li>About us</li>
-              <li>Blog</li>
+              <li><a href="">Home</a></li>
+              <li><a href="">About us</a></li>
+              <li><a href="">Blog</a></li>
              </ul>
-              <button> <i class="fa-solid fa-user"></i>&nbsp;&nbsp;Login </button>
+              <button class="btn--secondary"> <i class="fa-solid fa-user"></i>&nbsp;&nbsp;Login </button>
+            </nav> 
+            <div class="header__navigation--mobile__icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="header__navigation--mobile">
+              <div class="header__navigation--mobile__content">
+                <nav class="header__navigation--mobile__list">
+                  <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Blog</a></li>
+                  </ul>
+                </nav>
+                <div class="header__navigation--mobile__close">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+              </div>
+              <div class="header__navigation--mobile__overlay">
+              </div>
             </nav>
         </header>
         <section class="hero">
           <h1>A powerful solution to grow your startup. Fast!</h1>
           <p>Organise, collaborate, and track progress seamlessly with our one-stop-shop startup growth tool.</p>
-          <button class="hero__btn-1">Get Started</button>
-          <button class="hero__btn-2"><i class="fa-solid fa-laptop"></i> &nbsp; Book a Demo</button>
+          <div class="hero__btn">
+            <button class="hero__btn-1 btn--primary">Get Started</button>
+            <button class="hero__btn-2 btn--secondary"><i class="fa-solid fa-laptop"></i> &nbsp; Book a Demo</button>
+          </div>
         </section >
       </div>
 
@@ -46,10 +67,10 @@
           <section class="slide">
             <div class="grid wide">
               <div class="row slide__title">
-                <h1 class="col l-8">Don't just take our word for it, see the success  stories from businesses just like yours.</h1>
+                <h1 class="col l-8 m-12 c-12">Don't just take our word for it, see the success  stories from businesses just like yours.</h1>
               </div>
               <div class="row slide__comment">
-                <div class="col l-4">
+                <div class="col l-4 m-12 c-12">
                  <div class="slide__comment__item">
                   <p class="slide__comment__content">
                     “Our business has seen a significant increase in productivity since we started using the Growth app.”
@@ -88,7 +109,7 @@
                 <p>Start free and scale while you grow. No hidden fees. Unlimited users for free.</p>
               </div>
               <div class="row pricing__content ">
-                    <div class="col l-o-2 l-4 m-12 c-12">
+                    <div class="col l-o-1 l-5 m-12 c-12">
                     <div class="pricing__content__item1">
                       <div class="pricing__content__simple">
                         <h4>Simple</h4>
@@ -104,7 +125,7 @@
                         <button class="pricing__content__btn btn--primary">Get started</button>
                     </div>
                     </div>
-                    <div class="col l-4 m-12 c-12">
+                    <div class="col l-5 m-12 c-12">
                       <div class="pricing__content__item2">
                         <div class="pricing__content__premium">
                           <h4>Premium</h4>
@@ -117,7 +138,7 @@
                           <li>Data visualisation</li>
                           <li>Schedule appointments</li>
                           <li>Store and organise contact information</li>
-                          <li>Teal-time communication tools for messaging and video conferencing</li>
+                          <li>Real-time communication tools for messaging and video conferencing</li>
                         </ul>
                         <button class="pricing__content__btn btn--primary">Get started</button>
                       </div>
@@ -129,7 +150,139 @@
               </div>
             </div>
           </section>
+          <section class="FAQ">
+            <div class="grid wide">
+            <div class="FAQ__introduce">
+              <h1>Frequently asked questions</h1>
+              <div class="FAQ__introduce__btn">
+                <button class="btn--primary">All</button>
+                <button class="btn--secondary">Getting started</button>
+                <button class="btn--secondary">Pricing</button>
+              </div> 
+            </div>
+            <div class="FAQ__content">
+              <div class="FAQ__content__item">
+                <div class="FAQ__content__item__content">
+                  <h4>How does the contact management feature help me keep track of clients and partners?</h4>
+                  <div class="FAQ__content__item__icon">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+                <p>Keep track of your contacts, gain valuable insights, analyse live data and performance metrics.</p>
+              </div>
+
+              <div class="FAQ__content__item">
+                <div class="FAQ__content__item__content">
+                  <h4>Can I customize the dashboards and reporting feature to display the metrics that are most important to my business?</h4>
+                  <div class="FAQ__content__item__icon">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+                <p>Keep track of your contacts, gain valuable insights, analyse live data and performance metrics.</p>
+              </div>
+              
+              <div class="FAQ__content__item">
+                <div class="FAQ__content__item__content">
+                  <h4>How does the task management feature help me delegate tasks to my team and track progress?</h4>
+                  <div class="FAQ__content__item__icon">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+                <p>Keep track of your contacts, gain valuable insights, analyse live data and performance metrics.</p>
+              </div>
+
+              <div class="FAQ__content__item">
+                <div class="FAQ__content__item__content">
+                  <h4>Can I collaborate with my team in real-time using all tools?</h4>
+                  <div class="FAQ__content__item__icon">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+                <p>Keep track of your contacts, gain valuable insights, analyse live data and performance metrics.</p>
+              </div>
+              
+              <div class="FAQ__content__item">
+                <div class="FAQ__content__item__content">
+                  <h4>Is the app available on all devices?</h4>
+                  <div class="FAQ__content__item__icon">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+                <p>Keep track of your contacts, gain valuable insights, analyse live data and performance metrics.</p>
+              </div>
+              
+              <div class="FAQ__content__item">
+                <div class="FAQ__content__item__content">
+                  <h4>How does the app help me stay compliant when working with freelancers and contractors?</h4>
+                  <div class="FAQ__content__item__icon">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+                <p>Keep track of your contacts, gain valuable insights, analyse live data and performance metrics.</p>
+              </div>
+            </div>
+          </div>
+          </section>
   
+          <section class="footer"> 
+              <div class="grid wide">
+                <div class="footer__img">
+                  <img src="images/logo-white.png" alt="">
+                </div>
+                  <div class="row">
+                <div class="col l-4 m-6 c-12">
+                  <div class="footer__newsletter">
+                    <h4>Subcribe to newsletter</h4>
+                    <p>Subcribe now to receive tips on how to take your business to the next level.</p>
+                    <div class="footer__newsletter__wrap">
+                      <input type="text" placeholder="Enter your mail">
+                      <button class="footer__newsletter__btn ">Subcribe</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col l-8 m-6 c-12">
+                  <div class="row footer__content">
+                    <div class="col l-4 m-6 c-6">
+                      <div class="footer__content__info">
+                        <h5>Company</h5>
+                        <p>About</p>
+                        <p>Our Process</p>
+                        <p>Join our team</p>
+                      </div>
+                    </div>
+                    <div class="col l-4 m-6 c-6">
+                      <div class="footer__content__info">
+                        <h5>Resources</h5>
+                        <p>News</p>
+                        <p>Research</p>
+                        <p>Recent Projects</p>
+                      </div>
+                    </div>
+                    <div class="col l-4 m-6 c-6">
+                      <div class="footer__content__info">
+                        <h5>Contact</h5>
+                        <p>hello@growthapp.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="footer__social">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="footer__copyright">
+                  <i class="fa-solid fa-copyright"></i>&nbsp;2023 Growth. All rights reserved
+                </div>
+              </div>
+              
+          </section>
 </body>
     <script src="script.js"></script>
 </html>
