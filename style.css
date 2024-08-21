@@ -300,15 +300,19 @@ body{
   text-align: center;
   margin-bottom: 40px;
 }
+
 .FAQ__introduce h1{
   font-size: 1.8rem;
   margin-bottom: 60px;
   font-weight: 600;
 }
+.FAQ__introduce__mobile {
+  display: none;
+}
 .FAQ__introduce__btn{
   background-color: var(--secondary-color-btn);
   display: inline-flex;
-  padding: 10px;
+  padding: 10px 10px;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -424,27 +428,39 @@ body{
   color: white;
 }
 .header__navigation--mobile{
-  display: none;
+    width: 50%;
+    display: none;
+}
+
+.header__navigation--mobile.show{
+  display: block;
 }
 
 .header__navigation--mobile__icon{
   display: none;
-  position: absolute;
   top: 24px;
   right: 36px;
   font-size: 1.2rem
 }
 
 .header__navigation--mobile__content{
-  display: none;
   position: fixed;
-  width: 59%;
+  width: 60%;
   right: 0px;
   background-color: white;
   top: 0px;
   height: 100vh;
   z-index: 2;
-  display: none;
+  transform: translateX(100%);
+  animation: showNavigationContent 0.3s ease-in forwards;
+}
+@keyframes showNavigationContent{
+  from{
+    transform: translateX(100%);
+  }
+  to{
+    transform: translateX(0%);
+  }
 }
 
 .header__navigation--mobile__list{
@@ -463,9 +479,9 @@ body{
 }
 .header__navigation--mobile__close{
   position: absolute;
-  top: 8px;
+  top: 16px;
   right: 24px;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .header__navigation--mobile__overlay{
   position: fixed;
@@ -475,7 +491,6 @@ body{
   bottom: 0px;
   background-color: rgba(0,0,0,0.8);
   z-index: 1;
-  display: none;
 }
 
 
@@ -540,6 +555,9 @@ body{
     .footer__content{
       margin-left: 0px;
     }
+    .footer__content .col:nth-child(3) .footer__content__info {
+      margin-top: 24px;
+    }
 }
 @media screen and (min-width: 576px) and (max-width: 739px) {
   .grid.wide{
@@ -575,7 +593,7 @@ body{
     padding: 40px 0px;
   }
   .video__content{
-    border: none;
+    padding: 0px 0px 80px;
   }
   .video__title{
     margin-top: 20px;
@@ -618,11 +636,14 @@ body{
   .footer__content__info{
     margin-left: 0px;
   }
+  .footer__content .col:nth-child(3) .footer__content__info {
+    margin-top: 24px;
+  }
 }
 
 @media screen and (max-width: 575.98px) {
   .grid.wide{
-    padding: 0px 32px;
+    padding: 0px 16px;
   }
   .header__navigation--mobile__icon{
     display: block;
@@ -658,5 +679,62 @@ body{
   .hero__btn-1{
     margin-bottom: 12px;
   }
-
+  .video{
+    padding: 24px 0px;
+  }
+  .video__title h1{
+    font-size: 1.6rem;
+  }
+  .video__btn{
+    width: 100%;
+  }
+  .video__btn button{
+    width: 100%;
+    padding: 20px 20px;
+  }
+  .slide{
+    padding: 40px 0px 60px 0px;
+  }
+  .slide__comment__item{
+    margin-bottom: 24px;
+  }
+  .slide__title{
+    font-size: 1rem;
+  }
+  .pricing__content__item1,.pricing__content__item2{
+    min-height: 0px;
+  }
+  .pricing__content__item1{
+    margin-bottom: 24px;
+  }
+  .FAQ__introduce h1:nth-child(1){
+    display: none;
+  }
+ 
+  .FAQ__introduce__mobile {
+    display: block;
+  }
+  .footer__content{
+    margin-left: 0px;
+    margin-top: 24px;
+  }
+  .footer__content__info{
+    margin-left: 0px;
+  }
+  .footer__content .col:nth-child(3) .footer__content__info{
+    margin-top: 24px;
+  }
+  .FAQ__content__item__content h4{
+    font-size: 0.8rem;
+  }
+  .FAQ__content__item p{
+    font-size: 0.8rem;
+  }
+  .FAQ__content__item__icon{
+    font-size: 0.8rem;
+  }
+  .FAQ__introduce__btn{
+    padding: 0px;
+    background-color: transparent;
+  }
 }

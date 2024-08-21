@@ -17,3 +17,30 @@ faqItemIconList2.forEach((faqItemIcon2,item) => {
   })
   
 })
+
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+scrollToTopBtn.addEventListener('click', function() {
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Smooth scroll
+  });
+});
+
+const scrollToFooterViewFeatures = document.getElementById('scroll__view-features');
+scrollToFooterViewFeatures.addEventListener('click', function() {
+  window.scrollTo({
+      bottom: 0,
+      behavior: 'smooth' // Smooth scroll
+  });
+});
+
+const navMobileIcon = document.querySelector('.header__navigation--mobile__icon')
+const mobileContent = document.querySelector('.header__navigation--mobile')
+navMobileIcon.onclick = function(){
+  mobileContent.classList.add("show")
+}
+
+const mobileIconClose = document.querySelector('.header__navigation--mobile__close')
+mobileIconClose.onclick = function(){
+  mobileContent.classList.remove("show")
+}
