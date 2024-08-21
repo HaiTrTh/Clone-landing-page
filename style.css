@@ -738,3 +738,11 @@ body{
     background-color: transparent;
   }
 }
+@media screen and (max-width: 330px) {
+  .grid.wide{
+    padding: 0 16px 0 16px;
+  }
+  .FAQ__introduce__btn{
+    display: inline-grid;
+  }
+}
